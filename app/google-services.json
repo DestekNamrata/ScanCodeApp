@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "893872614028",
+    "firebase_url": "https://vayortricksapp.firebaseio.com",
+    "project_id": "vayortricksapp",
+    "storage_bucket": "vayortricksapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:893872614028:android:c7aa727a2370cbfa",
+        "android_client_info": {
+          "package_name": "com.essensys.JB089"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "893872614028-38vhmdg6m7ipitcp2nq3bkc9gemrt987.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.essensys.JB089",
+            "certificate_hash": "a9ceb280f27737d6881d8881a33e76e81cb28023"
+          }
+        },
+        {
+          "client_id": "893872614028-jq49v0a1qerr11l3tovm6bukb20rtbep.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC0txsVqX3L6iTlzX1MAdFl6u5kfK67nY4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "893872614028-jq49v0a1qerr11l3tovm6bukb20rtbep.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

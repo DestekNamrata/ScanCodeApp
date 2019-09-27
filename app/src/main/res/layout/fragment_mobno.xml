@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="@dimen/margin20">
+        <LinearLayout
+            android:id="@+id/linear_fullNameMob"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:theme="@style/TextInputLayoutAppearance"
+
+                >
+                <com.essensys.JB089.CustomView.CustomEditText
+                    android:id="@+id/edt_fullnameMob"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/textSize14"
+                    android:hint="Full Name"
+                    android:background="@null"
+                    android:inputType="text"
+                    android:padding="@dimen/padding10"
+                    />
+            </android.support.design.widget.TextInputLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/lightest_gray"/>
+
+        </LinearLayout>
+<android.support.design.widget.TextInputLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:theme="@style/TextInputLayoutAppearance">
+    <com.essensys.JB089.CustomView.CustomEditText
+        android:id="@+id/edt_mobNo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/textSize14"
+        android:inputType="number"
+        android:maxLength="10"
+        android:fontFamily="sans-serif"
+
+        android:background="@null"
+        android:hint="Phone number"
+        android:padding="@dimen/padding10"
+        />
+
+</android.support.design.widget.TextInputLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/lightest_gray"/>
+        <LinearLayout
+            android:id="@+id/linear_phoneVerCode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin15"
+            android:visibility="visible"
+            android:orientation="horizontal">
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.2"
+                android:theme="@style/TextInputLayoutAppearance">
+
+                <com.essensys.JB089.CustomView.CustomEditText
+                    android:id="@+id/edt_otp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/textSize14"
+                    android:fontFamily="sans-serif"
+                    android:hint="Verification Code"
+                    android:background="@null"
+                    android:layout_marginRight="5dp"
+                    android:padding="@dimen/padding10"
+                    android:inputType="number"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <com.essensys.JB089.CustomView.CustomTextView
+                android:id="@+id/txt_sendCode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin20"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/orange"
+                android:textSize="@dimen/textSize14"
+                android:gravity="right"
+                android:text="Send"
+                android:visibility="gone"
+                android:fontFamily="sans-serif"
+                android:clickable="true"
+                android:foreground="?attr/selectableItemBackgroundBorderless"
+                android:layout_weight="0.8"
+                />
+
+            <com.essensys.JB089.CustomView.CustomTextView
+                android:id="@+id/txt_ResendCode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin20"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/orange"
+                android:textSize="@dimen/textSize14"
+                android:gravity="center"
+                android:text="Resend"
+                android:visibility="gone"
+                android:fontFamily="sans-serif"
+                android:clickable="true"
+                android:foreground="?attr/selectableItemBackgroundBorderless"
+                android:layout_weight="0.6"
+                />
+
+            <com.essensys.JB089.CustomView.CustomTextView
+                android:id="@+id/txt_secsCode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin20"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/orange"
+                android:textSize="@dimen/textSize14"
+                android:gravity="right"
+                android:text=""
+                android:fontFamily="sans-serif"
+
+                android:clickable="true"
+                android:foreground="?attr/selectableItemBackgroundBorderless"
+                android:layout_weight="0.8"
+                />
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/lightest_gray"/>
+<!--<LinearLayout-->
+    <!--android:id="@+id/linear_PhonePass"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:visibility="gone"-->
+    <!--android:orientation="vertical">-->
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="horizontal">-->
+        <!--<android.support.design.widget.TextInputLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight="0.2"-->
+            <!--android:theme="@style/TextInputLayoutAppearance">-->
+            <!--<com.essensys.JB089.CustomView.CustomEditText-->
+                <!--android:id="@+id/edt_PassMob"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:textSize="@dimen/textSize16"-->
+                <!--android:hint="Password "-->
+                <!--android:background="@null"-->
+                <!--android:padding="@dimen/margin10"-->
+                <!--android:inputType="textPassword"-->
+                <!--android:layout_marginTop="@dimen/margin15"/>-->
+        <!--</android.support.design.widget.TextInputLayout>-->
+        <!--<ImageView-->
+            <!--android:id="@+id/img_showPassMob"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:visibility="gone"-->
+            <!--android:layout_marginTop="@dimen/margin30"-->
+            <!--android:src="@drawable/ic_showpass"/>-->
+        <!--<ImageView-->
+            <!--android:id="@+id/img_hidePassMob"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:visibility="visible"-->
+            <!--android:layout_marginTop="@dimen/margin30"-->
+            <!--android:src="@drawable/ic_hidepass"/>-->
+    <!--</LinearLayout>-->
+
+    <!--<View-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="0.5dp"-->
+        <!--android:background="@color/lightest_gray"/>-->
+
+<!--</LinearLayout>-->
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="horizontal">-->
+            <!--<com.essensys.JB089.CustomView.CustomTextView-->
+                <!--android:id="@+id/txt_msgPassCode"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:textSize="@dimen/textSize16"-->
+                <!--android:textColor="@color/blue"-->
+                <!--android:layout_weight="1"-->
+                <!--android:visibility="gone"-->
+                <!--android:text="Use this password?"-->
+                <!--android:layout_marginTop="@dimen/margin15"/>-->
+            <!--<com.essensys.JB089.CustomView.CustomTextView-->
+                <!--android:id="@+id/txt_forPassMob"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_weight="1"-->
+                <!--android:textSize="@dimen/textSize16"-->
+                <!--android:textColor="@color/light_gray"-->
+                <!--android:gravity="right"-->
+                <!--android:visibility="gone"-->
+                <!--android:text="Forgot Password ?"-->
+                <!--android:layout_marginTop="@dimen/margin15"/>-->
+
+        <!--</LinearLayout>-->
+
+            <com.essensys.JB089.CustomView.CustomButton
+                android:id="@+id/btn_MobLogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Log In"
+                android:visibility="gone"
+                android:textSize="@dimen/textSize18"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif"
+
+                android:textColor="@color/white"
+                android:layout_marginTop="@dimen/margin30"
+                android:background="@drawable/drawable_btns_reg"
+                />
+        <LinearLayout
+            android:id="@+id/lin_termCond"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="visible"
+            >
+            <com.essensys.JB089.CustomView.CustomButton
+                android:id="@+id/btn_MobReg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sign Up"
+                android:textSize="@dimen/textSize18"
+                android:fontFamily="sans-serif"
+
+                android:textStyle="bold"
+                android:clickable="true"
+                android:foreground="?attr/selectableItemBackgroundBorderless"
+                android:textColor="@color/white"
+                android:layout_marginTop="@dimen/margin30"
+                android:background="@drawable/drawable_btns_reg"
+                />
+
+                <com.essensys.JB089.CustomView.CustomTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin25"
+                    android:textSize="12sp"
+                    android:fontFamily="sans-serif"
+
+                    android:gravity="center_horizontal"
+                    android:textColor="@color/light_gray"
+                    android:text="By clicking on sign up, you agree to our"/>
+                <com.essensys.JB089.CustomView.CustomTextView
+                    android:id="@+id/txt_termsMob"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:layout_gravity="center"
+                    android:padding="8dp"
+                    android:fontFamily="sans-serif"
+
+                    android:clickable="true"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:textColor="@color/blue"
+                    android:text=" Terms and Conditions"/>
+
+
+        </LinearLayout>
+        <RelativeLayout
+            android:id="@+id/rel_new_user"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:visibility="gone"
+
+            >
+            <com.essensys.JB089.CustomView.CustomTextView
+                android:id="@+id/txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New User ?"
+                android:padding="5dp"
+                android:textColor="@color/black"
+                android:visibility="visible"
+
+                android:layout_marginTop="@dimen/margin30"
+                android:textSize="@dimen/textSize16"
+                />
+            <com.essensys.JB089.CustomView.CustomTextView
+                android:id="@+id/txt_newUserMob"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" Sign Up"
+                android:clickable="true"
+                android:padding="5dp"
+                android:foreground="?attr/selectableItemBackgroundBorderless"
+                android:layout_toRightOf="@id/txt"
+                android:textColor="@color/orange"
+                android:visibility="visible"
+                android:textStyle="bold"
+                android:layout_marginTop="@dimen/margin30"
+                android:textSize="@dimen/textSize16"
+                />
+
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

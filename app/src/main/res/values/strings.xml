@@ -1,0 +1,73 @@
+<resources>
+    <string name="app_name">VT</string>
+    <string name="title_activity_splash_screen">SplashScreenActivity</string>
+    <string name="title_activity_login">ActivityLogin</string>
+    <string name="title_activity_dash_board">ActivityDashBoard</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="MobNo">Phone Number</string>
+    <string name="Email">Email</string>
+
+    <!--for fonts-->
+    <string name="str_font">calibri_regular.otf</string>
+    <string name="str_font_bold">Calibri_semi_bold.otf</string>
+    <string name="str_icon_font">Calibrilight.png</string>
+    <string name="title_activity_register">ActivityRegister</string>
+
+    <string-array name="str_array_customer">
+
+        <item>Home</item>
+        //0
+        <item>Scan History</item>//1
+        <item>Contact Us</item>//2
+        <item>About Us</item>/3
+        <item>Settings</item>
+        //4
+        <item>Log Out</item>
+        //5
+        <!--<item>Version</item>-->
+        <!--//6-->
+    </string-array>
+    <string name="title_activity_view_pager">ActivityViewPager</string>
+    <!--for login-->
+    <string name="str_not_internet_connection">No internet connection.</string>
+    <string name="str_login_msg_success">Logged in successfully.</string>
+    <string name="str_login_msg_check_credentials">Please check your credentials.</string>
+    <string name="str_login_msg_inactive">Please activate your account.</string>
+    <string name="str_login_msg_reg_account">Please register your account</string>
+    <string name="str_login_msg_forgot_success">Forgot password link sent to your registered email address.</string>
+    <string name="str_not_connect_to_server">We are not connected to server.</string>
+
+    <!--Validation -->
+    <string name="str_name">Please enter Name.</string>
+
+    <string name="str_email">Please enter Email Id.</string>
+    <string name="str_Validemail">Please enter valid Email Id.</string>
+    <string name="str_pass">Please enter Password.</string>
+    <string name="str_Validpass">Password should be minimum 6 characters</string>
+
+    <string name="str_mobNo">Please enter Mobile No.</string>
+    <string name="str_10mobNo">Please enter 10 digit Mobile No.</string>
+    <string name="str_otp">Please enter OTP.</string>
+    <string name="str_validOtp">Please enter valid OTP.</string>
+    <string name="title_activity_forgot_pass">ActivityForgotPass</string>
+
+    <string-array name="str_arr_image_option">
+        <!--<item>Do you want to upload a picture ?</item>-->
+        <item>Camera</item>
+        <item>Cancel</item>
+    </string-array>
+    <string name="title_activity_terms_condition">ActivityTermsCondition</string>
+    <string name="title_activity_profile_update">ActivityProfileUpdate</string>
+    <string name="title_activity_email_update">ActivityEmailUpdate</string>
+    <string name="title_activity_mobile_update">ActivityMobileUpdate</string>
+    <string name="title_activity_scan_det">ActivityScanDet</string>
+    <string name="title_activity_scan_view_det">ActivityScanViewDet</string>
+    <string name="title_activity_scan_prod_view">ActivityScanProdView</string>
+    <string name="address">S. No. 168/2, Flat No. 304,Nisarg Nirmiti, B Building,Pimple Saudagar, Pune, Maharashtra. \n Pincode– 411027.</string>
+    <string name="Rs">\u20B9</string>
+    <string name="title_activity_prod_det">ActivityProdDet</string>
+    <string name="title_activity_scan_history">ActivityScanHistory</string>
+    <string name="title_activity_scan_view_det1">ActivityScanViewDet1</string>
+</resources>

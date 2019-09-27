@@ -1,0 +1,57 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/orange">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:clickable="true"
+            android:foreground="?attr/selectableItemBackground"
+            android:layout_margin="5dp"
+            >
+            <ImageView
+                android:id="@+id/img_bckTerms"
+                android:layout_width="30dp"
+                android:layout_height="25dp"
+                android:src="@drawable/ic_arrow_back"/>
+        </RelativeLayout>
+
+        <com.essensys.JB089.CustomView.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Terms and Condition"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif"
+
+            android:textColor="@color/white"
+            android:textSize="@dimen/textSize18"
+            android:padding="10dp"
+            android:gravity="center"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ProgressBar
+            android:id="@+id/progressBarWebView"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerInParent="true"
+            />
+
+
+        <WebView
+            android:id="@+id/webviewone"
+            android:layout_width="match_parent"
+            android:visibility="gone"
+            android:layout_height="match_parent"></WebView>
+    </RelativeLayout>
+
+
+</LinearLayout>

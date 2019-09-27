@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/margin10"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/margin10">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="5dp">
+        <RelativeLayout
+            android:id="@+id/layout_menu_icon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/img_nav_item_menu"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="@dimen/margin15"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@drawable/ic_home"/>
+
+        </RelativeLayout>
+
+        <com.essensys.JB089.CustomView.CustomTextView
+            android:id="@+id/tv_nav_item_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1"
+            android:gravity="left"
+            android:text="sdsf"
+            android:textColor="#000"
+            android:padding="8dp"
+            android:fontFamily="sans-serif-light"
+            android:layout_marginTop="5dp"
+            android:textSize="@dimen/textSize16"
+            />
+
+    </LinearLayout>
+   <View
+       android:layout_width="match_parent"
+       android:layout_height="1dp"
+       android:layout_marginRight="@dimen/margin15"
+       android:background="@color/lightest_gray"/>
+</LinearLayout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+
+    <ListView
+        android:id="@+id/lst_scan"
+        android:layout_margin="8dp"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:divider="@null"
+        android:layout_height="wrap_content">
+
+    </ListView>
+    <com.essensys.JB089.CustomView.CustomTextView
+        android:id="@+id/txt_msg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="Records not available, Please start scanning the product`s Bar-code or QR-code details."
+        android:textColor="@color/black"
+        android:visibility="gone"
+        android:layout_margin="@dimen/margin10"
+        android:textSize="@dimen/textSize20"
+        app:customFont="@string/str_font_bold"
+        android:gravity="center"/>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fabScan"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="30dp"
+        android:layout_marginBottom="@dimen/size10"
+        app:backgroundTint="@android:color/white"
+        app:srcCompat="@drawable/ic_qrcode"
+        tools:ignore="VectorDrawableCompat"
+        />
+
+
+
+</RelativeLayout>

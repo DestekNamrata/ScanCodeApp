@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    >
+
+        <RelativeLayout
+            android:id="@+id/rel_forgot"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/orange"
+            >
+            <ImageView
+                android:id="@+id/img_bckProd"
+                android:layout_width="30dp"
+                android:layout_height="25dp"
+                android:layout_margin="@dimen/margin10"
+                android:src="@drawable/ic_arrow_back"/>
+            <com.essensys.JB089.CustomView.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Product Details"
+                app:customFont="@string/str_font_bold"
+                android:padding="12dp"
+                android:textColor="@color/white"
+                android:textAllCaps="true"
+                android:fontFamily="sans-serif"
+
+                android:gravity="center_horizontal"
+                android:textSize="@dimen/textSize20"/>
+
+
+        </RelativeLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+    <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_margin="@dimen/margin15"
+
+                        android:gravity="center_horizontal"
+                        android:layout_centerInParent="true"
+                        >
+                        <ImageView
+                            android:id="@+id/img_prodDet"
+                            android:layout_width="170dp"
+                            android:layout_height="170dp"
+                            android:layout_marginTop="@dimen/margin15"
+                            android:src="@drawable/ic_vt_logo"
+                            android:scaleType="fitXY"
+                            />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="15dp"
+                            android:weightSum="1"
+                            >
+                            <com.essensys.JB089.CustomView.CustomTextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Name :"
+                                android:layout_weight="0.6"
+                                android:textStyle="bold"
+                                android:textSize="@dimen/textSize16"
+                                android:fontFamily="sans-serif"
+                                android:textColor="@color/light_gray"
+                                />
+                            <com.essensys.JB089.CustomView.CustomTextView
+                                android:id="@+id/txt_ProdName"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="cvcvcv"
+                                android:fontFamily="sans-serif"
+                                android:layout_weight="0.4"
+                                android:textSize="@dimen/textSize16"
+                                android:layout_marginLeft="@dimen/margin10"
+                                android:textColor="@color/black"
+                                android:gravity="left"
+                                />
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="5dp"
+                            android:weightSum="1"
+                            >
+                            <com.essensys.JB089.CustomView.CustomTextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Price :"
+                                android:textStyle="bold"
+                                android:layout_weight="0.6"
+                                android:textSize="@dimen/textSize16"
+                                android:fontFamily="sans-serif"
+                                android:textColor="@color/light_gray"
+                                />
+                            <com.essensys.JB089.CustomView.CustomTextView
+                                android:id="@+id/txt_PriceProd"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="cvcvcv"
+                                android:layout_marginLeft="@dimen/margin10"
+                                android:layout_weight="0.4"
+                                android:textSize="@dimen/textSize16"
+                                android:fontFamily="sans-serif"
+                                android:textColor="@color/black"
+                                android:gravity="left"
+                                />
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/linear_desc"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="5dp"
+                            android:weightSum="1"
+
+                            >
+                            <com.essensys.JB089.CustomView.CustomTextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Description :"
+                                android:layout_weight="0.6"
+                                android:fontFamily="sans-serif"
+                                android:textSize="@dimen/textSize16"
+                                android:textStyle="bold"
+                                android:textColor="@color/light_gray"
+                                />
+                            <com.essensys.JB089.CustomView.CustomTextView
+                                android:id="@+id/txt_descProd"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="ddff"
+                                android:layout_marginLeft="@dimen/margin10"
+                                android:layout_weight="0.4"
+                                android:gravity="left"
+                                android:textSize="@dimen/textSize16"
+                                android:fontFamily="sans-serif"
+                                android:textColor="@color/black"
+                                />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin30"
+                            android:orientation="horizontal"
+                            android:weightSum="1">
+
+                            <com.essensys.JB089.CustomView.CustomButton
+                                android:id="@+id/btn_amazone"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginRight="5dp"
+                                android:layout_weight="0.5"
+                                android:background="@drawable/drawable_btns_reg"
+                                android:fontFamily="sans-serif"
+                                android:padding="5dp"
+                                android:text="Buy from Amazon"
+                                android:textAllCaps="false"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/textSize16"
+                                android:textStyle="bold" />
+
+                            <com.essensys.JB089.CustomView.CustomButton
+                                android:id="@+id/btn_flipcart"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="5dp"
+                                android:layout_weight="0.5"
+                                android:background="@drawable/drawable_btns_reg"
+                                android:fontFamily="sans-serif"
+                                android:padding="5dp"
+                                android:text="Buy from Flipcart"
+                                android:textAllCaps="false"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/textSize16"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+            </LinearLayout>
+    </ScrollView>
+
+
+
+
+</LinearLayout>

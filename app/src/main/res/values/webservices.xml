@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="ws_host">http://52.41.183.204/JB090/web-app/</string>
+    <string name="ws_send_verification_code">ws-user/ws-login/ws-send-verification-code.php</string>
+    <string name="ws_signUp">ws-user/ws-login/ws-signup.php</string>
+    <string name="ws_signIn">ws-user/ws-login/ws-login.php</string>
+    <string name="ws_add_token">ws-user/ws-login/ws-add-device-token-no.php</string>
+    <string name="ws_forgotPass">ws-user/ws-login/ws-forgot.php</string>
+    <string name="ws_scanprod_list">ws-product/ws-get-product-list.php</string>
+    <string name="ws_add_productScan">ws-product/ws-add-product.php</string>
+    <string name="ws_web_about">http://52.41.183.204/JB090/about-us-mobile.html</string>
+    <string name="ws_web_terms">http://52.41.183.204/JB090/terms-and-condition-mobile.html</string>
+    <string name="ws_contact_us">ws-cms/ws-contact-us-action.php</string>
+    <string name="ws_get_sett">ws-user/ws-settings/ws-get-settings-details.php</string>
+    <string name="ws_update_prof">ws-user/ws-settings/ws-settings-action.php</string>
+    <string name="ws_prod_list">ws-ecom-products/ws-get-ecom-product-list.php</string>
+</resources>

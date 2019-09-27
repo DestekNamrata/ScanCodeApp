@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragment.FragmentScanHistory">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/main_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin10"/>
+
+    <ProgressBar
+        android:id="@+id/main_progress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_alignParentBottom="true"/>
+    <com.essensys.JB089.CustomView.CustomTextView
+        android:id="@+id/txt_msg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="Records not available, Please start scanning the product`s Bar-code or QR-code details."
+        android:textColor="@color/black"
+        android:visibility="gone"
+        android:layout_margin="@dimen/margin10"
+        android:textSize="@dimen/textSize18"
+        app:customFont="@string/str_font_bold"
+        android:gravity="center"/>
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fabScan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="@dimen/margin20"
+        android:clickable="true"
+        android:foreground="?attr/selectableItemBackgroundBorderless"
+        android:layout_above="@id/main_progress"
+        app:backgroundTint="@android:color/white"
+        app:srcCompat="@drawable/ic_qrcode"
+        tools:ignore="VectorDrawableCompat"
+        />
+</RelativeLayout>

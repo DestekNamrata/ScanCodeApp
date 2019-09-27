@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splashscreen"
+    tools:context=".Activity.SplashScreenActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+
+        android:orientation="vertical">
+
+        <!--<ImageView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="200dp"-->
+            <!--android:src="@drawable/vtlogo"/>-->
+        <ProgressBar
+            android:id="@+id/progress"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:layout_marginTop="220dp"
+            style="@style/TransparentProgressDialog"/>
+    </LinearLayout>
+
+
+    <com.essensys.JB089.CustomView.CustomTextView
+        android:id="@+id/txt_version"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/textSize16"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:text="Version: 1.0"
+        android:gravity="center_horizontal"
+        android:layout_marginBottom="5dp"
+        android:layout_alignParentBottom="true"/>
+
+
+
+</RelativeLayout>

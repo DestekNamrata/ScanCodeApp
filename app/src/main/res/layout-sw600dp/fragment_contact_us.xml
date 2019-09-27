@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".Fragment.FragmentContactUs">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.4">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg"
+
+            >
+
+        </RelativeLayout>
+
+
+    </FrameLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="1">
+        <!--<FrameLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_weight="0.4">-->
+        <!--<RelativeLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:background="@drawable/bg"-->
+        <!---->
+        <!--&gt;-->
+
+        <!--</RelativeLayout>-->
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="100dp"
+            android:layout_weight="0.4"
+            android:layout_marginRight="@dimen/margin15"
+            android:layout_marginLeft="@dimen/margin15"
+            android:layout_marginBottom="@dimen/margin15"
+            app:cardCornerRadius="@dimen/margin10"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin15"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:theme="@style/TextInputLayoutAppearance">
+                    <com.essensys.JB089.CustomView.CustomEditText
+                        android:id="@+id/edt_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Name"
+                        android:fontFamily="sans-serif"
+
+                        android:padding="5dp"
+                        android:inputType="text"
+                        android:background="@null"
+                        android:textSize="@dimen/textSize14"
+                        />
+
+                </android.support.design.widget.TextInputLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/lightest_gray"/>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin10"
+                    android:theme="@style/TextInputLayoutAppearance">
+                    <com.essensys.JB089.CustomView.CustomEditText
+                        android:id="@+id/edt_email_contct"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Email"
+                        android:fontFamily="sans-serif"
+
+                        android:padding="5dp"
+                        android:inputType="textEmailAddress"
+                        android:background="@null"
+                        android:textSize="@dimen/textSize14"
+                        />
+
+                </android.support.design.widget.TextInputLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/lightest_gray"/>
+                <com.essensys.JB089.CustomView.CustomEditText
+                    android:id="@+id/edt_msgs"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:hint="Message"
+                    android:padding="5dp"
+                    android:fontFamily="sans-serif"
+
+                    android:maxLines="10"
+                    android:gravity="start"
+                    android:layout_marginTop="@dimen/margin10"
+                    android:inputType="textMultiLine"
+                    android:background="@drawable/drawable_msg"
+                    android:textSize="@dimen/textSize14"
+                    />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/lightest_gray"/>
+                <com.essensys.JB089.CustomView.CustomButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btn_send_cntct"
+                    android:textSize="16sp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:text="Send"
+                    android:fontFamily="sans-serif"
+
+                    android:layout_marginTop="@dimen/margin25"
+                    android:background="@drawable/drawable_btns_reg"/>
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+        <!--</FrameLayout>-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="0.6">
+
+            <com.essensys.JB089.CustomView.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/textSize18"
+                android:textColor="@color/orange"
+                android:text="Address"
+                android:gravity="center"
+                android:fontFamily="sans-serif"
+
+                android:textStyle="bold"/>
+
+            <com.essensys.JB089.CustomView.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/textSize16"
+                android:textColor="@color/black"
+                android:text="Vayortricks Private Limited"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:fontFamily="sans-serif"
+                android:layout_marginTop="@dimen/margin10"/>
+            <com.essensys.JB089.CustomView.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:textSize="@dimen/textSize16"
+                android:textColor="@color/light_gray"
+                android:gravity="center"
+                android:layout_marginTop="5dp"
+                android:text="@string/address"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

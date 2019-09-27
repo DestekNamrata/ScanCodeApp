@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:id="@+id/rel_forgot"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg"
+            >
+            <ImageView
+                android:id="@+id/img_bckName"
+                android:layout_width="30dp"
+                android:layout_height="25dp"
+                android:layout_marginTop="@dimen/margin10"
+                android:src="@drawable/ic_arrow_back"/>
+            <com.essensys.JB089.CustomView.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Profile update"
+                app:customFont="@string/str_font_bold"
+                android:padding="@dimen/margin10"
+                android:textColor="@color/white"
+                android:textAllCaps="true"
+                android:fontFamily="sans-serif"
+
+                android:gravity="center_horizontal"
+                android:textSize="@dimen/textSize20"/>
+
+
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_margin="@dimen/margin10"
+            >
+
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="100dp"
+                app:cardCornerRadius="@dimen/margin20"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp"
+               >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin15"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/linear_phoneForgot"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin25"
+                            android:theme="@style/TextInputLayoutAppearance">
+
+                            <com.essensys.JB089.CustomView.CustomEditText
+                                android:id="@+id/edt_NameUpdate"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="Name"
+                                android:fontFamily="sans-serif"
+
+                                android:padding="5dp"
+                                android:inputType="text"
+                                android:background="@null"
+                                android:textSize="@dimen/textSize14"
+                                />
+
+                        </android.support.design.widget.TextInputLayout>
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:background="@color/lightest_gray"/>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            >
+                            <com.essensys.JB089.CustomView.CustomTextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Gender :"
+                                android:layout_marginTop="10dp"
+                                android:textColor="@color/light_gray"
+                                android:textSize="@dimen/textSize16"/>
+                            <RadioGroup
+                                android:id="@+id/rdogrp_reg"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:enabled="false"
+
+                                android:orientation="horizontal"
+                                >
+
+                                <RadioButton
+                                    android:id="@+id/rdo_male"
+                                    android:textColor="@color/light_gray"
+                                    android:layout_width="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text="Male"
+                                    android:fontFamily="sans-serif"
+
+                                    android:textSize="@dimen/textSize14"
+                                    android:layout_height="wrap_content"
+                                    />
+
+
+
+
+                                <RadioButton
+                                    android:id="@+id/rdo_female"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/light_gray"
+                                    android:layout_weight="1"
+                                    android:text="Female"
+                                    android:textSize="14sp"
+                                    android:fontFamily="sans-serif"
+
+                                    android:layout_alignParentLeft="true"
+                                    />
+                            </RadioGroup>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/linear_emailForgot"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:orientation="vertical">
+                        <com.essensys.JB089.CustomView.CustomTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:textColor="@color/light_gray"
+                            android:textSize="@dimen/textSize16"
+                            android:layout_marginTop="@dimen/margin20"
+                            android:text="Please enter your registered email."/>
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin25"
+                            android:theme="@style/TextInputLayoutAppearance">
+
+                            <com.essensys.JB089.CustomView.CustomEditText
+                                android:id="@+id/edt_forgotEmail"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="Email"
+                                android:background="@null"
+                                android:padding="5dp"
+
+                                android:inputType="textEmailAddress"
+                                android:textSize="@dimen/textSize14"
+                                />
+
+                        </android.support.design.widget.TextInputLayout>
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:background="@color/lightest_gray"/>
+                    </LinearLayout>
+
+
+
+                    <com.essensys.JB089.CustomView.CustomButton
+                        android:id="@+id/btn_UpdateProf"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Update"
+                        android:clickable="true"
+                        android:fontFamily="sans-serif"
+
+                        android:foreground="?attr/selectableItemBackground"
+                        android:layout_marginTop="@dimen/margin25"
+                        android:textSize="@dimen/textSize16"
+                        android:textColor="@color/white"
+                        android:background="@drawable/drawable_btns_reg"/>
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+
+
+</RelativeLayout>

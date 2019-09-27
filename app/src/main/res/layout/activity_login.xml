@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    >
+
+    <FrameLayout
+        android:id="@+id/rel_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg">
+            <com.essensys.JB089.CustomView.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="Login"
+                android:fontFamily="sans-serif"
+
+                android:textAllCaps="true"
+                android:gravity="center"
+                android:textSize="@dimen/textSize20"
+                android:layout_marginTop="@dimen/margin20"
+                android:textColor="@color/white"/>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="20dp"
+            >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin25"
+                android:visibility="gone"
+                android:src="@drawable/logo"/>
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="450dp"
+                android:layout_marginTop="80dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp"
+                app:cardCornerRadius="@dimen/margin10"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <android.support.design.widget.TabLayout
+                        android:id="@+id/sliding_tabs"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:tabMode="fixed"
+                        android:theme="@style/TabLayout"
+                        android:layout_margin="@dimen/margin10"
+                        android:layout_marginTop="@dimen/margin10"/>
+
+                    <android.support.v4.view.ViewPager
+                        android:id="@+id/viewpager"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/margin10"
+                        android:background="@android:color/white" />
+
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+    </FrameLayout>
+    <!--<ScrollView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_below="@id/rel_register"-->
+    <!--&gt;-->
+
+    <!--</ScrollView>-->
+
+</RelativeLayout>
+    <!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+    <!--xmlns:tools="http://schemas.android.com/tools"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:background="@color/light_orange"-->
+    <!--android:orientation="vertical"-->
+    <!--tools:context=".Activity.ActivityLogin"-->
+    <!--&gt;-->
+    <!--<LinearLayout-->
+    <!--android:id="@+id/linear_loginTitle"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:orientation="horizontal"-->
+    <!--android:background="@color/light_orange"-->
+    <!--android:visibility="visible">-->
+
+    <!--&lt;!&ndash;<ImageView&ndash;&gt;-->
+    <!--&lt;!&ndash;android:id="@+id/imgbckLogin"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:src="@drawable/ic_arrow_back"/>&ndash;&gt;-->
+
+    <!--<com.essensys.JB089.CustomView.CustomTextView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="Log In"-->
+    <!--android:textStyle="bold"-->
+    <!--android:layout_margin="@dimen/margin10"-->
+    <!--android:gravity="center_horizontal"-->
+    <!--android:textSize="@dimen/textSize20"-->
+    <!--android:textColor="@color/white"/>-->
+
+    <!--</LinearLayout>-->
+    <!--&lt;!&ndash;<ScrollView&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_height="match_parent"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:fillViewport="true"&ndash;&gt;-->
+    <!--&lt;!&ndash;&gt;&ndash;&gt;-->
+    <!--<LinearLayout-->
+    <!--android:id="@+id/linear_tabs"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_below="@+id/linear_loginTitle"-->
+    <!--android:orientation="vertical"-->
+    <!--android:layout_centerInParent="true"-->
+    <!--&gt;-->
+
+
+
+    <!--<LinearLayout-->
+    <!--android:id="@+id/linear_login"-->
+    <!--android:layout_centerInParent="true"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:orientation="vertical"-->
+    <!--android:visibility="gone"-->
+    <!--android:layout_margin="@dimen/margin25"-->
+    <!--&gt;-->
+    <!--<ImageView-->
+    <!--android:layout_width="130dp"-->
+    <!--android:layout_height="150dp"-->
+    <!--android:layout_gravity="center_horizontal"-->
+    <!--android:src="@drawable/ic_vt_logo"/>-->
+
+    <!--<com.essensys.JB089.CustomView.CustomButton-->
+    <!--android:id="@+id/btn_newUser"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="New User ? Sign Up"-->
+    <!--android:textColor="@color/white"-->
+    <!--android:textAllCaps="false"-->
+
+    <!--android:background="@drawable/drawable_btns_reg"-->
+    <!--android:textSize="@dimen/textSize16"-->
+    <!--android:textStyle="bold"/>-->
+
+    <!--<com.essensys.JB089.CustomView.CustomButton-->
+    <!--android:id="@+id/btn_login"-->
+    <!--android:background="@drawable/drawable_login"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="Existing User ? Log In"-->
+    <!--android:textColor="@color/btn_login"-->
+    <!--android:textAllCaps="false"-->
+    <!--android:textSize="@dimen/textSize16"-->
+    <!--android:layout_marginTop="@dimen/margin40"-->
+    <!--android:textStyle="bold"/>-->
+    <!--</LinearLayout>-->
+
+
+    <!--<ImageView-->
+    <!--android:layout_width="130dp"-->
+    <!--android:layout_height="150dp"-->
+    <!--android:visibility="gone"-->
+    <!--android:layout_gravity="center_horizontal"-->
+    <!--android:src="@drawable/logo"/>-->
+    <!--<android.support.v7.widget.CardView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_margin="5dp"-->
+    <!--app:cardCornerRadius="@dimen/margin20"-->
+    <!--app:cardElevation="@dimen/margin10"-->
+    <!--android:layout_height="410dp">-->
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_margin="@dimen/margin15"-->
+    <!--android:orientation="vertical">-->
+    <!--<android.support.design.widget.TabLayout-->
+    <!--android:id="@+id/sliding_tabs"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--app:tabMode="fixed"-->
+    <!--android:theme="@style/TabLayout"-->
+    <!--android:layout_marginTop="@dimen/margin10"/>-->
+
+    <!--<android.support.v4.view.ViewPager-->
+    <!--android:id="@+id/viewpager"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:background="@android:color/white" />-->
+    <!--</LinearLayout>-->
+
+
+    <!--</android.support.v7.widget.CardView>-->
+
+    <!--</LinearLayout>-->
+
+    <!--&lt;!&ndash;<LinearLayout&ndash;&gt;-->
+    <!--&lt;!&ndash;android:id="@+id/linear_tabs"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:visibility="gone"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_centerInParent="true"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:orientation="vertical">&ndash;&gt;-->
+
+
+    <!--&lt;!&ndash;<ImageView&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_height="120dp"&ndash;&gt;-->
+
+    <!--&lt;!&ndash;android:src="@drawable/ic_vt_logo"/>&ndash;&gt;-->
+    <!--&lt;!&ndash;&lt;!&ndash;<android.support.design.widget.TabLayout&ndash;&gt;&ndash;&gt;-->
+    <!--&lt;!&ndash;&lt;!&ndash;android:id="@+id/sliding_tabs"&ndash;&gt;&ndash;&gt;-->
+    <!--&lt;!&ndash;&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;&ndash;&gt;-->
+    <!--&lt;!&ndash;&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;&ndash;&gt;-->
+    <!--&lt;!&ndash;&lt;!&ndash;app:tabMode="fixed"&ndash;&gt;&ndash;&gt;-->
+    <!--&lt;!&ndash;&lt;!&ndash;app:tabIndicatorColor="@color/orange"&ndash;&gt;&ndash;&gt;-->
+    <!--&lt;!&ndash;&lt;!&ndash;app:tabTextColor="@color/black"&ndash;&gt;&ndash;&gt;-->
+    <!--&lt;!&ndash;&lt;!&ndash;android:layout_marginTop="@dimen/margin10"/>&ndash;&gt;&ndash;&gt;-->
+
+    <!--&lt;!&ndash;&lt;!&ndash;<android.support.v4.view.ViewPager&ndash;&gt;&ndash;&gt;-->
+    <!--&lt;!&ndash;&lt;!&ndash;android:id="@+id/viewpager"&ndash;&gt;&ndash;&gt;-->
+    <!--&lt;!&ndash;&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;&ndash;&gt;-->
+    <!--&lt;!&ndash;&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;&ndash;&gt;-->
+    <!--&lt;!&ndash;&lt;!&ndash;android:background="@android:color/white" />&ndash;&gt;&ndash;&gt;-->
+    <!--&lt;!&ndash;</LinearLayout>&ndash;&gt;-->
+
+    <!--&lt;!&ndash;</ScrollView>&ndash;&gt;-->
+
+
+    <!--</RelativeLayout>-->

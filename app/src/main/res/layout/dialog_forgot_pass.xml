@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <com.essensys.JB089.CustomView.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Forgot Password"
+            android:textStyle="bold"
+            android:padding="@dimen/margin10"
+            android:textColor="@color/black"
+            android:gravity="center_horizontal"
+            android:textSize="@dimen/textSize16"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/lightest_gray"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin15"
+        android:orientation="vertical">
+
+      <LinearLayout
+          android:id="@+id/linear_phoneForgot"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+          android:visibility="gone"
+         android:orientation="vertical">
+          <com.essensys.JB089.CustomView.CustomTextView
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:gravity="center_horizontal"
+              android:textColor="@color/light_gray"
+              android:textStyle="bold"
+              android:textSize="@dimen/textSize16"
+              android:layout_marginTop="@dimen/margin25"
+              android:text="Please enter your registered phone number."/>
+
+          <android.support.design.widget.TextInputLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="@dimen/margin25"
+              android:theme="@style/TextInputLayoutAppearance">
+
+              <com.essensys.JB089.CustomView.CustomEditText
+                  android:id="@+id/edt_forgotMobNo"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:hint="Phone Number"
+                  android:background="@null"
+                  android:textSize="@dimen/textSize14"
+                  />
+
+          </android.support.design.widget.TextInputLayout>
+          <View
+              android:layout_width="match_parent"
+              android:layout_height="0.5dp"
+              android:background="@color/lightest_gray"/>
+      </LinearLayout>
+        <LinearLayout
+            android:id="@+id/linear_emailForgot"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:orientation="vertical">
+            <com.essensys.JB089.CustomView.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:textColor="@color/light_gray"
+                android:textStyle="bold"
+                android:textSize="@dimen/textSize16"
+                android:layout_marginTop="@dimen/margin25"
+                android:text="Please enter your registered email."/>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin25"
+                android:theme="@style/TextInputLayoutAppearance">
+
+                <com.essensys.JB089.CustomView.CustomEditText
+                    android:id="@+id/edt_forgotEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Phone Number"
+                    android:textSize="@dimen/textSize14"
+                    />
+
+            </android.support.design.widget.TextInputLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/lightest_gray"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear_forgotBtns"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin30"
+            android:orientation="horizontal">
+
+            <com.essensys.JB089.CustomView.CustomButton
+                android:id="@+id/btn_cancel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cancel"
+                android:textSize="@dimen/textSize16"
+                android:textColor="@color/white"
+                android:layout_weight="1"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/drawable_btns_reg"/>
+            <com.essensys.JB089.CustomView.CustomButton
+                android:id="@+id/btn_sendOtp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Send OTP"
+                android:textSize="@dimen/textSize16"
+                android:textColor="@color/white"
+                android:layout_weight="1"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/drawable_btns_reg"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

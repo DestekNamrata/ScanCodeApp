@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rel_dashboard"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/orange"
+        >
+
+        <ImageButton
+            android:id="@+id/img_nav_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/padding10"
+            android:clickable="true"
+            android:foreground="?attr/selectableItemBackgroundBorderless"
+            android:background="@null"
+            android:src="@drawable/ic_menu" />
+
+        <com.essensys.JB089.CustomView.CustomTextView
+            android:id="@+id/txt_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="@dimen/margin10"
+            android:gravity="center"
+            android:padding="8dp"
+            android:fontFamily="sans-serif"
+
+            android:textColor="@color/white"
+            android:textSize="@dimen/textSize18" />
+
+        <com.essensys.JB089.CustomView.CustomTextView
+            android:id="@+id/tv_title_for_fragments"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text=""
+            android:fontFamily="sans-serif"
+
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textSize18"
+            app:customFont="@string/str_font_bold" />
+
+
+
+        <ImageView
+            android:id="@+id/img_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_edit"
+            android:textColor="@android:color/white"
+            android:visibility="gone" />
+
+
+
+    </RelativeLayout>
+
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:id="@+id/content_frame"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <LinearLayout
+            android:id="@+id/layout_sidemenu"
+            android:layout_width="270dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:clickable="true"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <!--<LinearLayout-->
+                <!--android:id="@+id/layout_profile_content"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:clickable="false"-->
+                <!--android:orientation="vertical"-->
+                <!--android:background="@color/white">-->
+
+                <!--<ImageView-->
+                    <!--android:layout_width="100dp"-->
+                    <!--android:layout_height="100dp"-->
+                    <!--android:layout_marginTop="@dimen/margin15"-->
+                    <!--android:visibility="gone"-->
+                    <!--android:layout_gravity="center_horizontal"-->
+                    <!--android:src="@drawable/logo1" />-->
+                <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:gravity="center_horizontal"-->
+                    <!--android:layout_marginTop="@dimen/margin10"-->
+                    <!--&gt;-->
+                    <!--<ImageView-->
+                        <!--android:id="@+id/img"-->
+                        <!--android:layout_width="80dp"-->
+                        <!--android:layout_height="80dp"-->
+                        <!--android:scaleType="fitXY"-->
+                        <!--android:src="@drawable/ic_user"-->
+                        <!--/>-->
+                <!--</LinearLayout>-->
+                <!--&lt;!&ndash;<LinearLayout&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_gravity="center_horizontal"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_marginRight="@dimen/margin15"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:orientation="horizontal"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:weightSum="2">&ndash;&gt;-->
+
+
+                <!--<LinearLayout-->
+                    <!--android:id="@+id/linear"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_toRightOf="@+id/img"-->
+                    <!--android:layout_marginLeft="10dp"-->
+                    <!--android:layout_marginRight="@dimen/margin10"-->
+                    <!--android:orientation="vertical">-->
+                    <!--<com.essensys.JB089.CustomView.CustomTextView-->
+                        <!--android:id="@+id/txt_profile_name"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:gravity="center_horizontal"-->
+                        <!--android:text="hghgh"-->
+                        <!--android:visibility="visible"-->
+                        <!--android:textStyle="bold"-->
+                        <!--android:fontFamily="sans-serif"-->
+                        <!--android:textColor="@color/black"-->
+                        <!--android:textSize="@dimen/textSize18"-->
+                        <!--app:customFont="@string/str_font" />-->
+                    <!--<com.essensys.JB089.CustomView.CustomTextView-->
+                        <!--android:id="@+id/txt_profile_name1"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:text="hghgh"-->
+                        <!--android:gravity="center_horizontal"-->
+                        <!--android:visibility="gone"-->
+                        <!--android:textStyle="bold"-->
+                        <!--android:fontFamily="sans-serif"-->
+                        <!--android:layout_marginTop="3dp"-->
+                        <!--android:textColor="@color/black"-->
+                        <!--android:textSize="@dimen/textSize18"-->
+                        <!--app:customFont="@string/str_font" />-->
+
+                <!--</LinearLayout>-->
+
+                <!--&lt;!&ndash;</LinearLayout>&ndash;&gt;-->
+
+
+            <!--</LinearLayout>-->
+
+            <RelativeLayout
+                android:id="@+id/layout_profile_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:orientation="vertical"
+                android:background="@color/white">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="@dimen/margin15"
+                    android:visibility="gone"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/logo1" />
+                <RelativeLayout
+                    android:id="@+id/rel_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin15"
+                    android:layout_marginRight="@dimen/margin15"
+                    android:layout_marginBottom="@dimen/margin20"
+                    android:layout_marginTop="@dimen/margin15"
+                    >
+                    <ImageView
+                        android:id="@+id/img"
+                        android:layout_width="90dp"
+                        android:layout_height="90dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/ic_user"
+                        />
+                </RelativeLayout>
+                <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_gravity="center_horizontal"-->
+                <!--android:layout_marginRight="@dimen/margin15"-->
+                <!--android:orientation="horizontal"-->
+                <!--android:weightSum="2">-->
+
+
+                <LinearLayout
+                    android:id="@+id/linear"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/rel_img"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/margin10"
+                    android:orientation="vertical">
+                    <com.essensys.JB089.CustomView.CustomTextView
+                        android:id="@+id/txt_profile_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:text="hghgh"
+                        android:visibility="visible"
+                        android:textStyle="bold"
+                        android:fontFamily="sans-serif"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/textSize16"
+                        app:customFont="@string/str_font" />
+                    <com.essensys.JB089.CustomView.CustomTextView
+                        android:id="@+id/txt_profile_name1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="hghgh"
+                        android:visibility="gone"
+                        android:textStyle="bold"
+                        android:fontFamily="sans-serif"
+                        android:layout_marginTop="3dp"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/textSize16"
+                        app:customFont="@string/str_font" />
+
+                </LinearLayout>
+
+                <!--</LinearLayout>-->
+
+
+            </RelativeLayout>
+           <View
+               android:layout_width="match_parent"
+               android:layout_height="0.5dp"
+
+               android:background="@color/black"/>
+            <!--<ListView-->
+                <!--android:id="@+id/lv_drawer"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_marginBottom="@dimen/size30"-->
+                <!--android:choiceMode="singleChoice"-->
+                <!--android:divider="@android:color/darker_gray"-->
+                <!--android:dividerHeight="0dp" />-->
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+                <ListView
+                    android:id="@+id/lv_drawer"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="@dimen/size30"
+                    android:choiceMode="singleChoice"
+                    android:divider="@android:color/darker_gray"
+                    android:dividerHeight="0dp" />
+
+                <com.essensys.JB089.CustomView.CustomTextView
+                    android:id="@+id/txt_verdash"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="hjdasd"
+                    android:padding="3dp"
+                    android:gravity="center_horizontal"
+                    android:layout_alignParentBottom="true"
+                    android:textSize="@dimen/textSize16"
+                    android:fontFamily="sans-serif"
+                    android:textColor="@color/light_gray"
+                    />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+    </android.support.v4.widget.DrawerLayout>
+
+</LinearLayout>
