@@ -13,8 +13,10 @@
     <string name="str_font">calibri_regular.otf</string>
     <string name="str_font_bold">Calibri_semi_bold.otf</string>
     <string name="str_icon_font">Calibrilight.png</string>
-    <string name="title_activity_register">ActivityRegister</string>
 
+    <string name="title_activity_register">ActivityRegister</string>
+    <string name="turn_on_flashlight">Turn on Flashlight</string>
+    <string name="turn_off_flashlight">Turn off Flashlight</string>
     <string-array name="str_array_customer">
 
         <item>Home</item>
@@ -70,4 +72,7 @@
     <string name="title_activity_prod_det">ActivityProdDet</string>
     <string name="title_activity_scan_history">ActivityScanHistory</string>
     <string name="title_activity_scan_view_det1">ActivityScanViewDet1</string>
+    <string name="title_activity_autocomplete">ActivityAutocomplete</string>
+    <string name="title_activity_barcode_reader">ActivityBarcodeReader</string>
+    <string name="title_activity_material_scan">MaterialScanActivity</string>
 </resources>

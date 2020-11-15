@@ -23,7 +23,7 @@
                 android:src="@drawable/ic_arrow_back"/>
         </RelativeLayout>
 
-        <com.essensys.JB089.CustomView.CustomTextView
+        <com.vayortricks.vtproductscanner.CustomView.CustomTextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Terms and Condition"

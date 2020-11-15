@@ -18,7 +18,7 @@
         android:layout_height="wrap_content">
 
     </ListView>
-    <com.essensys.JB089.CustomView.CustomTextView
+    <com.vayortricks.vtproductscanner.CustomView.CustomTextView
         android:id="@+id/txt_msg"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -31,7 +31,7 @@
         app:customFont="@string/str_font_bold"
         android:gravity="center"/>
 
-    <android.support.design.widget.FloatingActionButton
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/fabScan"
         android:layout_width="100dp"
         android:layout_height="100dp"

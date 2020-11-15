@@ -8,7 +8,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
-        <com.essensys.JB089.CustomView.CustomTextView
+        <com.vayortricks.vtproductscanner.CustomView.CustomTextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Forgot Password"
@@ -36,7 +36,7 @@
          android:layout_height="wrap_content"
           android:visibility="gone"
          android:orientation="vertical">
-          <com.essensys.JB089.CustomView.CustomTextView
+          <com.vayortricks.vtproductscanner.CustomView.CustomTextView
               android:layout_width="match_parent"
               android:layout_height="wrap_content"
               android:gravity="center_horizontal"
@@ -46,13 +46,13 @@
               android:layout_marginTop="@dimen/margin25"
               android:text="Please enter your registered phone number."/>
 
-          <android.support.design.widget.TextInputLayout
+          <com.google.android.material.textfield.TextInputLayout
               android:layout_width="match_parent"
               android:layout_height="wrap_content"
               android:layout_marginTop="@dimen/margin25"
               android:theme="@style/TextInputLayoutAppearance">
 
-              <com.essensys.JB089.CustomView.CustomEditText
+              <com.vayortricks.vtproductscanner.CustomView.CustomEditText
                   android:id="@+id/edt_forgotMobNo"
                   android:layout_width="match_parent"
                   android:layout_height="wrap_content"
@@ -61,7 +61,7 @@
                   android:textSize="@dimen/textSize14"
                   />
 
-          </android.support.design.widget.TextInputLayout>
+          </com.google.android.material.textfield.TextInputLayout>
           <View
               android:layout_width="match_parent"
               android:layout_height="0.5dp"
@@ -73,7 +73,7 @@
             android:layout_height="wrap_content"
             android:visibility="gone"
             android:orientation="vertical">
-            <com.essensys.JB089.CustomView.CustomTextView
+            <com.vayortricks.vtproductscanner.CustomView.CustomTextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center_horizontal"
@@ -83,13 +83,13 @@
                 android:layout_marginTop="@dimen/margin25"
                 android:text="Please enter your registered email."/>
 
-            <android.support.design.widget.TextInputLayout
+            <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/margin25"
                 android:theme="@style/TextInputLayoutAppearance">
 
-                <com.essensys.JB089.CustomView.CustomEditText
+                <com.vayortricks.vtproductscanner.CustomView.CustomEditText
                     android:id="@+id/edt_forgotEmail"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -97,7 +97,7 @@
                     android:textSize="@dimen/textSize14"
                     />
 
-            </android.support.design.widget.TextInputLayout>
+            </com.google.android.material.textfield.TextInputLayout>
             <View
                 android:layout_width="match_parent"
                 android:layout_height="0.5dp"
@@ -111,7 +111,7 @@
             android:layout_marginTop="@dimen/margin30"
             android:orientation="horizontal">
 
-            <com.essensys.JB089.CustomView.CustomButton
+            <com.vayortricks.vtproductscanner.CustomView.CustomButton
                 android:id="@+id/btn_cancel"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -121,7 +121,7 @@
                 android:layout_weight="1"
                 android:layout_marginRight="5dp"
                 android:background="@drawable/drawable_btns_reg"/>
-            <com.essensys.JB089.CustomView.CustomButton
+            <com.vayortricks.vtproductscanner.CustomView.CustomButton
                 android:id="@+id/btn_sendOtp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

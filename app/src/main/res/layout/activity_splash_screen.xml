@@ -27,7 +27,7 @@
     </LinearLayout>
 
 
-    <com.essensys.JB089.CustomView.CustomTextView
+    <com.vayortricks.vtproductscanner.CustomView.CustomTextView
         android:id="@+id/txt_version"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

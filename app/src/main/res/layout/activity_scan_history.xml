@@ -4,14 +4,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".Fragment.FragmentScanHistory">
+    >
     <RelativeLayout
         android:id="@+id/rel_scan"
         android:layout_width="match_parent"
         android:layout_height="48dp"
         android:background="@color/orange"
         >
-        <com.essensys.JB089.CustomView.CustomTextView
+        <com.vayortricks.vtproductscanner.CustomView.CustomTextView
             android:text="Scan History"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -33,7 +33,7 @@
             android:background="@null"
             android:src="@drawable/ic_arrow_back" />
 
-        <com.essensys.JB089.CustomView.CustomTextView
+        <com.vayortricks.vtproductscanner.CustomView.CustomTextView
             android:id="@+id/txt_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -46,7 +46,7 @@
             android:textColor="@color/white"
             android:textSize="@dimen/textSize18" />
 
-        <com.essensys.JB089.CustomView.CustomTextView
+        <com.vayortricks.vtproductscanner.CustomView.CustomTextView
             android:id="@+id/tv_title_for_fragments"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -75,24 +75,25 @@
 
 
     </RelativeLayout>
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
         android:layout_below="@+id/rel_scan">
-        <android.support.v7.widget.RecyclerView
+        <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/main_recyclerscan"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_above="@id/main_progressscan"
             android:layout_margin="@dimen/margin10"/>
 
         <ProgressBar
             android:id="@+id/main_progressscan"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="30dp"
             android:visibility="gone"
             android:layout_alignParentBottom="true"/>
-        <com.essensys.JB089.CustomView.CustomTextView
+        <com.vayortricks.vtproductscanner.CustomView.CustomTextView
             android:id="@+id/txt_msgscan"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -106,9 +107,9 @@
             android:gravity="center"/>
 
 
-    </LinearLayout>
+    </RelativeLayout>
 
-    <android.support.design.widget.FloatingActionButton
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/fabScan1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -120,6 +121,6 @@
         android:layout_above="@id/main_progress"
         app:backgroundTint="@android:color/white"
         app:srcCompat="@drawable/ic_qrcode"
-        tools:ignore="VectorDrawableCompat"
+        tools:ignore="NotSibling,VectorDrawableCompat"
         />
 </RelativeLayout>

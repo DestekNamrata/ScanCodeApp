@@ -17,14 +17,14 @@
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:visibility="gone">
-            <android.support.design.widget.TextInputLayout
+            <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
 
                 android:theme="@style/TextInputLayoutAppearance"
 
                 >
-                <com.essensys.JB089.CustomView.CustomEditText
+                <com.vayortricks.vtproductscanner.CustomView.CustomEditText
                     android:id="@+id/edt_fullnameMob"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -34,18 +34,18 @@
                     android:inputType="text"
                     android:padding="@dimen/padding10"
                     />
-            </android.support.design.widget.TextInputLayout>
+            </com.google.android.material.textfield.TextInputLayout>
             <View
                 android:layout_width="match_parent"
                 android:layout_height="0.5dp"
                 android:background="@color/lightest_gray"/>
 
         </LinearLayout>
-<android.support.design.widget.TextInputLayout
+<com.google.android.material.textfield.TextInputLayout
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:theme="@style/TextInputLayoutAppearance">
-    <com.essensys.JB089.CustomView.CustomEditText
+    <com.vayortricks.vtproductscanner.CustomView.CustomEditText
         android:id="@+id/edt_mobNo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -59,7 +59,7 @@
         android:padding="@dimen/padding10"
         />
 
-</android.support.design.widget.TextInputLayout>
+</com.google.android.material.textfield.TextInputLayout>
         <View
             android:layout_width="match_parent"
             android:layout_height="0.5dp"
@@ -72,13 +72,13 @@
             android:visibility="visible"
             android:orientation="horizontal">
 
-            <android.support.design.widget.TextInputLayout
+            <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="0.2"
                 android:theme="@style/TextInputLayoutAppearance">
 
-                <com.essensys.JB089.CustomView.CustomEditText
+                <com.vayortricks.vtproductscanner.CustomView.CustomEditText
                     android:id="@+id/edt_otp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -90,9 +90,9 @@
                     android:padding="@dimen/padding10"
                     android:inputType="number"/>
 
-            </android.support.design.widget.TextInputLayout>
+            </com.google.android.material.textfield.TextInputLayout>
 
-            <com.essensys.JB089.CustomView.CustomTextView
+            <com.vayortricks.vtproductscanner.CustomView.CustomTextView
                 android:id="@+id/txt_sendCode"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -109,7 +109,7 @@
                 android:layout_weight="0.8"
                 />
 
-            <com.essensys.JB089.CustomView.CustomTextView
+            <com.vayortricks.vtproductscanner.CustomView.CustomTextView
                 android:id="@+id/txt_ResendCode"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -126,7 +126,7 @@
                 android:layout_weight="0.6"
                 />
 
-            <com.essensys.JB089.CustomView.CustomTextView
+            <com.vayortricks.vtproductscanner.CustomView.CustomTextView
                 android:id="@+id/txt_secsCode"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -142,6 +142,7 @@
                 android:foreground="?attr/selectableItemBackgroundBorderless"
                 android:layout_weight="0.8"
                 />
+
         </LinearLayout>
         <View
             android:layout_width="match_parent"
@@ -223,7 +224,7 @@
 
         <!--</LinearLayout>-->
 
-            <com.essensys.JB089.CustomView.CustomButton
+        <com.vayortricks.vtproductscanner.CustomView.CustomButton
                 android:id="@+id/btn_MobLogin"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -244,7 +245,7 @@
             android:orientation="vertical"
             android:visibility="visible"
             >
-            <com.essensys.JB089.CustomView.CustomButton
+            <com.vayortricks.vtproductscanner.CustomView.CustomButton
                 android:id="@+id/btn_MobReg"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -260,7 +261,7 @@
                 android:background="@drawable/drawable_btns_reg"
                 />
 
-                <com.essensys.JB089.CustomView.CustomTextView
+                <com.vayortricks.vtproductscanner.CustomView.CustomTextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/margin25"
@@ -270,7 +271,7 @@
                     android:gravity="center_horizontal"
                     android:textColor="@color/light_gray"
                     android:text="By clicking on sign up, you agree to our"/>
-                <com.essensys.JB089.CustomView.CustomTextView
+                <com.vayortricks.vtproductscanner.CustomView.CustomTextView
                     android:id="@+id/txt_termsMob"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -294,7 +295,7 @@
             android:visibility="gone"
 
             >
-            <com.essensys.JB089.CustomView.CustomTextView
+            <com.vayortricks.vtproductscanner.CustomView.CustomTextView
                 android:id="@+id/txt"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -306,7 +307,7 @@
                 android:layout_marginTop="@dimen/margin30"
                 android:textSize="@dimen/textSize16"
                 />
-            <com.essensys.JB089.CustomView.CustomTextView
+            <com.vayortricks.vtproductscanner.CustomView.CustomTextView
                 android:id="@+id/txt_newUserMob"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

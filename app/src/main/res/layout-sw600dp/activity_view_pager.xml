@@ -22,7 +22,7 @@
                 android:src="@drawable/logo"/>
 
         </RelativeLayout>
-        <android.support.v7.widget.CardView
+        <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginTop="250dp"
@@ -31,14 +31,14 @@
             android:layout_marginBottom="120dp"
             app:cardCornerRadius="@dimen/margin15"
             >
-            <android.support.v4.view.ViewPager
+            <androidx.viewpager.widget.ViewPager
                 android:id="@+id/pager_introduction"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 tools:listitem="@layout/pager_item">
 
-            </android.support.v4.view.ViewPager>
-        </android.support.v7.widget.CardView>
+            </androidx.viewpager.widget.ViewPager>
+        </androidx.cardview.widget.CardView>
 
     </FrameLayout>
 
@@ -86,7 +86,7 @@
             android:layout_marginBottom="@dimen/margin10"
             >
 
-            <com.essensys.JB089.CustomView.CustomTextView
+            <com.vayortricks.vtproductscanner.CustomView.CustomTextView
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
                 android:text="Skip"
@@ -101,7 +101,7 @@
                 android:textColor="@color/white"
                 android:background="@drawable/drawable_btns_reg"
                 />
-            <com.essensys.JB089.CustomView.CustomTextView
+            <com.vayortricks.vtproductscanner.CustomView.CustomTextView
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
                 android:text="Get Started"

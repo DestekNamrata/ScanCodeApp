@@ -20,7 +20,7 @@
                 android:layout_height="35dp"
                 android:layout_marginTop="@dimen/margin15"
                 android:src="@drawable/ic_arrow_back"/>
-            <com.essensys.JB089.CustomView.CustomTextView
+            <com.vayortricks.vtproductscanner.CustomView.CustomTextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Scan Details"
@@ -49,7 +49,7 @@
                 android:layout_marginTop="@dimen/margin35"
 
                 android:src="@drawable/logo"/>
-            <android.support.v7.widget.CardView
+            <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="200dp"
@@ -87,7 +87,7 @@
                             android:orientation="horizontal"
                             android:layout_marginTop="25dp"
                             >
-                            <com.essensys.JB089.CustomView.CustomTextView
+                            <com.vayortricks.vtproductscanner.CustomView.CustomTextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:text="Format Type :"
@@ -99,7 +99,7 @@
                                 android:textColor="@color/light_gray"
                                 android:gravity="right"
                                 />
-                            <com.essensys.JB089.CustomView.CustomTextView
+                            <com.vayortricks.vtproductscanner.CustomView.CustomTextView
                                 android:id="@+id/txt_formatName"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
@@ -119,7 +119,7 @@
                             android:orientation="horizontal"
                             android:layout_marginTop="8dp"
                             >
-                            <com.essensys.JB089.CustomView.CustomTextView
+                            <com.vayortricks.vtproductscanner.CustomView.CustomTextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:text="Content :"
@@ -130,7 +130,7 @@
                                 android:textColor="@color/light_gray"
                                 android:gravity="right"
                                 />
-                            <com.essensys.JB089.CustomView.CustomTextView
+                            <com.vayortricks.vtproductscanner.CustomView.CustomTextView
                                 android:id="@+id/txt_scanText"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
@@ -151,7 +151,7 @@
                             android:layout_marginTop="8dp"
                             android:paddingBottom="@dimen/margin25"
                             >
-                            <com.essensys.JB089.CustomView.CustomTextView
+                            <com.vayortricks.vtproductscanner.CustomView.CustomTextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:text="Date :"
@@ -162,7 +162,7 @@
                                 android:textSize="@dimen/textSize16"
                                 android:textColor="@color/light_gray"
                                 />
-                            <com.essensys.JB089.CustomView.CustomTextView
+                            <com.vayortricks.vtproductscanner.CustomView.CustomTextView
                                 android:id="@+id/txt_scanDate"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
@@ -180,7 +180,7 @@
                     </LinearLayout>
                 </ScrollView>
 
-            </android.support.v7.widget.CardView>
+            </androidx.cardview.widget.CardView>
 
         </LinearLayout>
 

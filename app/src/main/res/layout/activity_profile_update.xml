@@ -20,7 +20,7 @@
                 android:layout_height="25dp"
                 android:layout_marginTop="@dimen/margin10"
                 android:src="@drawable/ic_arrow_back"/>
-            <com.essensys.JB089.CustomView.CustomTextView
+            <com.vayortricks.vtproductscanner.CustomView.CustomTextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Profile update"
@@ -43,7 +43,7 @@
             >
 
 
-            <android.support.v7.widget.CardView
+            <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="100dp"
@@ -64,13 +64,13 @@
                         android:layout_height="wrap_content"
                         android:orientation="vertical">
 
-                        <android.support.design.widget.TextInputLayout
+                        <com.google.android.material.textfield.TextInputLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="@dimen/margin25"
                             android:theme="@style/TextInputLayoutAppearance">
 
-                            <com.essensys.JB089.CustomView.CustomEditText
+                            <com.vayortricks.vtproductscanner.CustomView.CustomEditText
                                 android:id="@+id/edt_NameUpdate"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
@@ -83,7 +83,7 @@
                                 android:textSize="@dimen/textSize14"
                                 />
 
-                        </android.support.design.widget.TextInputLayout>
+                        </com.google.android.material.textfield.TextInputLayout>
                         <View
                             android:layout_width="match_parent"
                             android:layout_height="0.5dp"
@@ -93,7 +93,7 @@
                             android:layout_height="wrap_content"
                             android:orientation="vertical"
                             >
-                            <com.essensys.JB089.CustomView.CustomTextView
+                            <com.vayortricks.vtproductscanner.CustomView.CustomTextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:text="Gender :"
@@ -148,7 +148,7 @@
                         android:layout_height="wrap_content"
                         android:visibility="gone"
                         android:orientation="vertical">
-                        <com.essensys.JB089.CustomView.CustomTextView
+                        <com.vayortricks.vtproductscanner.CustomView.CustomTextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:gravity="center_horizontal"
@@ -157,13 +157,13 @@
                             android:layout_marginTop="@dimen/margin20"
                             android:text="Please enter your registered email."/>
 
-                        <android.support.design.widget.TextInputLayout
+                        <com.google.android.material.textfield.TextInputLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="@dimen/margin25"
                             android:theme="@style/TextInputLayoutAppearance">
 
-                            <com.essensys.JB089.CustomView.CustomEditText
+                            <com.vayortricks.vtproductscanner.CustomView.CustomEditText
                                 android:id="@+id/edt_forgotEmail"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
@@ -175,7 +175,7 @@
                                 android:textSize="@dimen/textSize14"
                                 />
 
-                        </android.support.design.widget.TextInputLayout>
+                        </com.google.android.material.textfield.TextInputLayout>
                         <View
                             android:layout_width="match_parent"
                             android:layout_height="0.5dp"
@@ -184,7 +184,7 @@
 
 
 
-                    <com.essensys.JB089.CustomView.CustomButton
+                    <com.vayortricks.vtproductscanner.CustomView.CustomButton
                         android:id="@+id/btn_UpdateProf"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -199,7 +199,7 @@
                         android:background="@drawable/drawable_btns_reg"/>
 
                 </LinearLayout>
-            </android.support.v7.widget.CardView>
+            </androidx.cardview.widget.CardView>
 
         </LinearLayout>
 

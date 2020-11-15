@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
@@ -32,7 +32,7 @@
                    android:layout_margin="@dimen/margin10"
                    android:orientation="vertical">
 
-                   <com.essensys.JB089.CustomView.CustomTextView
+                   <com.vayortricks.vtproductscanner.CustomView.CustomTextView
                        android:id="@+id/txt_prodName"
                        android:layout_width="match_parent"
                        android:layout_height="wrap_content"
@@ -43,7 +43,7 @@
                        android:textColor="@color/black"
                        android:textSize="14sp"
                        />
-                   <com.essensys.JB089.CustomView.CustomTextView
+                   <com.vayortricks.vtproductscanner.CustomView.CustomTextView
                        android:id="@+id/txt_price"
                        android:layout_width="match_parent"
                        android:layout_height="wrap_content"
@@ -55,7 +55,7 @@
                        android:layout_marginTop="5dp"
                        android:textSize="14sp" />
 
-                   <com.essensys.JB089.CustomView.CustomTextView
+                   <com.vayortricks.vtproductscanner.CustomView.CustomTextView
                        android:id="@+id/txt_desc"
                        android:layout_width="match_parent"
                        android:layout_height="wrap_content"
@@ -80,4 +80,4 @@
 
 
 
-</android.support.v7.widget.CardView>
+</androidx.cardview.widget.CardView>

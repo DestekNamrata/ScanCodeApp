@@ -24,7 +24,7 @@
             android:background="@null"
             android:src="@drawable/ic_menu" />
 
-        <com.essensys.JB089.CustomView.CustomTextView
+        <com.vayortricks.vtproductscanner.CustomView.CustomTextView
             android:id="@+id/txt_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -37,7 +37,7 @@
             android:textColor="@color/white"
             android:textSize="@dimen/textSize24" />
 
-        <com.essensys.JB089.CustomView.CustomTextView
+        <com.vayortricks.vtproductscanner.CustomView.CustomTextView
             android:id="@+id/tv_title_for_fragments"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -67,7 +67,7 @@
 
     </RelativeLayout>
 
-    <android.support.v4.widget.DrawerLayout
+    <androidx.drawerlayout.widget.DrawerLayout
         android:id="@+id/drawer_layout"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -214,7 +214,7 @@
                     android:layout_centerVertical="true"
                     android:layout_marginRight="@dimen/margin10"
                     android:orientation="vertical">
-                    <com.essensys.JB089.CustomView.CustomTextView
+                    <com.vayortricks.vtproductscanner.CustomView.CustomTextView
                         android:id="@+id/txt_profile_name"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -226,7 +226,7 @@
                         android:textColor="@color/black"
                         android:textSize="@dimen/textSize20"
                         app:customFont="@string/str_font" />
-                    <com.essensys.JB089.CustomView.CustomTextView
+                    <com.vayortricks.vtproductscanner.CustomView.CustomTextView
                         android:id="@+id/txt_profile_name1"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -272,7 +272,7 @@
                     android:divider="@android:color/darker_gray"
                     android:dividerHeight="0dp" />
 
-                <com.essensys.JB089.CustomView.CustomTextView
+                <com.vayortricks.vtproductscanner.CustomView.CustomTextView
                     android:id="@+id/txt_verdash"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -288,6 +288,6 @@
             </RelativeLayout>
         </LinearLayout>
 
-    </android.support.v4.widget.DrawerLayout>
+    </androidx.drawerlayout.widget.DrawerLayout>
 
 </LinearLayout>

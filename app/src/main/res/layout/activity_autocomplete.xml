@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <TextView
+        android:id="@+id/tvRestaurant"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="Enter Your Country Below"
+        android:textAppearance="?android:attr/textAppearanceMedium"/>
+<!--<com.google.android.material.textfield.TextInputEditText-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:id="@+id/txtIn"-->
+<!--    android:layout_height="wrap_content">-->
+<!--    <AutoCompleteTextView-->
+<!--        android:id="@+id/actv"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@+id/tvRestaurant"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:completionThreshold="1"/>-->
+
+<!--</com.google.android.material.textfield.TextInputEditText>-->
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:id="@+id/txtIn"
+        >
+
+        <AutoCompleteTextView
+            android:id="@+id/actv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="City/District/Town"
+            android:singleLine="true"
+            android:completionThreshold="1"
+            android:textColor="@color/black" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/tvDisplay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtIn"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="selected country will appear here"
+        android:textSize="20sp"/>
+
+</RelativeLayout>

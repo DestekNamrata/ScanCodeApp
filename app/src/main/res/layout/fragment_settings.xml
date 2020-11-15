@@ -23,7 +23,7 @@
             android:orientation="vertical"
             android:layout_margin="@dimen/margin10"
             >
-            <android.support.v7.widget.CardView
+            <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="80dp"
@@ -45,14 +45,14 @@
                         android:orientation="horizontal"
                         android:layout_marginRight="5dp"
                         >
-                        <android.support.design.widget.TextInputLayout
+                        <com.google.android.material.textfield.TextInputLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="10dp"
                             android:layout_weight="1"
 
                             android:theme="@style/TextInputLayoutAppearance">
-                            <com.essensys.JB089.CustomView.CustomEditText
+                            <com.vayortricks.vtproductscanner.CustomView.CustomEditText
                                 android:id="@+id/edt_name_sett"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
@@ -65,7 +65,7 @@
                                 android:textSize="@dimen/textSize14"
                                 />
 
-                        </android.support.design.widget.TextInputLayout>
+                        </com.google.android.material.textfield.TextInputLayout>
                          <ImageView
                              android:id="@+id/img_editName"
                              android:layout_width="40dp"
@@ -86,13 +86,13 @@
                             android:layout_height="wrap_content"
                             android:layout_marginRight="5dp"
                             android:orientation="horizontal">
-                            <android.support.design.widget.TextInputLayout
+                            <com.google.android.material.textfield.TextInputLayout
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="@dimen/margin10"
                                 android:layout_weight="1"
                                 android:theme="@style/TextInputLayoutAppearance">
-                                <com.essensys.JB089.CustomView.CustomEditText
+                                <com.vayortricks.vtproductscanner.CustomView.CustomEditText
                                     android:id="@+id/edt_email_sett"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
@@ -105,7 +105,7 @@
                                     android:textSize="@dimen/textSize14"
                                     />
 
-                            </android.support.design.widget.TextInputLayout>
+                            </com.google.android.material.textfield.TextInputLayout>
                             <ImageView
                                 android:id="@+id/img_editEmail"
                                 android:layout_width="40dp"
@@ -129,13 +129,13 @@
                             android:layout_height="wrap_content"
                             android:layout_marginRight="5dp"
                             android:orientation="horizontal">
-                            <android.support.design.widget.TextInputLayout
+                            <com.google.android.material.textfield.TextInputLayout
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="@dimen/margin10"
                                 android:layout_weight="1"
                                 android:theme="@style/TextInputLayoutAppearance">
-                                <com.essensys.JB089.CustomView.CustomEditText
+                                <com.vayortricks.vtproductscanner.CustomView.CustomEditText
                                     android:id="@+id/edt_mob_sett"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
@@ -149,7 +149,7 @@
                                     android:textSize="@dimen/textSize14"
                                     />
 
-                            </android.support.design.widget.TextInputLayout>
+                            </com.google.android.material.textfield.TextInputLayout>
                             <ImageView
                                 android:id="@+id/img_editMob"
                                 android:layout_width="40dp"
@@ -170,7 +170,7 @@
 
 
 
-            </android.support.v7.widget.CardView>
+            </androidx.cardview.widget.CardView>
 
         </LinearLayout>
     </FrameLayout>

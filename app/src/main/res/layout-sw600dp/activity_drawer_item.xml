@@ -28,7 +28,7 @@
 
         </RelativeLayout>
 
-        <com.essensys.JB089.CustomView.CustomTextView
+        <com.vayortricks.vtproductscanner.CustomView.CustomTextView
             android:id="@+id/tv_nav_item_title"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

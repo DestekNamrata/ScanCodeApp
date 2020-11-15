@@ -6,7 +6,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".Fragment.FragmentHome">
 
-    <android.support.v7.widget.RecyclerView
+    <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerProd"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -18,7 +18,7 @@
         android:layout_height="wrap_content"
         android:visibility="gone"
         android:layout_alignParentBottom="true"/>
-    <com.essensys.JB089.CustomView.CustomTextView
+    <com.vayortricks.vtproductscanner.CustomView.CustomTextView
         android:id="@+id/txt_msg_prod"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -35,8 +35,9 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_alignParentBottom="true"
+
     android:layout_margin="@dimen/margin10">
-    <com.essensys.JB089.CustomView.CustomButton
+    <com.vayortricks.vtproductscanner.CustomView.CustomButton
         android:id="@+id/btn_scan"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -46,7 +47,7 @@
         android:textAllCaps="false"
         android:background="@drawable/drawable_fab"
         android:text="Product Authencity Scan"/>
-    <android.support.design.widget.FloatingActionButton
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/fabScanProd"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -54,7 +55,6 @@
         android:layout_centerInParent="true"
         android:visibility="visible"
         android:foreground="?attr/selectableItemBackgroundBorderless"
-        android:layout_above="@id/main_progress"
         android:backgroundTint="@android:color/white"
         app:srcCompat="@drawable/ic_qrcode"
         tools:ignore="VectorDrawableCompat"

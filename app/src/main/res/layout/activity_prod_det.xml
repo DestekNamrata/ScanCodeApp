@@ -19,7 +19,7 @@
                 android:layout_height="25dp"
                 android:layout_margin="@dimen/margin10"
                 android:src="@drawable/ic_arrow_back"/>
-            <com.essensys.JB089.CustomView.CustomTextView
+            <com.vayortricks.vtproductscanner.CustomView.CustomTextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Product Details"
@@ -68,7 +68,7 @@
                             android:layout_marginTop="15dp"
                             android:weightSum="1"
                             >
-                            <com.essensys.JB089.CustomView.CustomTextView
+                            <com.vayortricks.vtproductscanner.CustomView.CustomTextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:text="Name :"
@@ -78,7 +78,7 @@
                                 android:fontFamily="sans-serif"
                                 android:textColor="@color/light_gray"
                                 />
-                            <com.essensys.JB089.CustomView.CustomTextView
+                            <com.vayortricks.vtproductscanner.CustomView.CustomTextView
                                 android:id="@+id/txt_ProdName"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
@@ -99,7 +99,7 @@
                             android:layout_marginTop="5dp"
                             android:weightSum="1"
                             >
-                            <com.essensys.JB089.CustomView.CustomTextView
+                            <com.vayortricks.vtproductscanner.CustomView.CustomTextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:text="Price :"
@@ -109,7 +109,7 @@
                                 android:fontFamily="sans-serif"
                                 android:textColor="@color/light_gray"
                                 />
-                            <com.essensys.JB089.CustomView.CustomTextView
+                            <com.vayortricks.vtproductscanner.CustomView.CustomTextView
                                 android:id="@+id/txt_PriceProd"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
@@ -132,7 +132,7 @@
                             android:weightSum="1"
 
                             >
-                            <com.essensys.JB089.CustomView.CustomTextView
+                            <com.vayortricks.vtproductscanner.CustomView.CustomTextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:text="Description :"
@@ -142,7 +142,7 @@
                                 android:textStyle="bold"
                                 android:textColor="@color/light_gray"
                                 />
-                            <com.essensys.JB089.CustomView.CustomTextView
+                            <com.vayortricks.vtproductscanner.CustomView.CustomTextView
                                 android:id="@+id/txt_descProd"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
@@ -164,7 +164,7 @@
                             android:orientation="horizontal"
                             android:weightSum="1">
 
-                            <com.essensys.JB089.CustomView.CustomButton
+                            <com.vayortricks.vtproductscanner.CustomView.CustomButton
                                 android:id="@+id/btn_amazone"
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
@@ -179,7 +179,7 @@
                                 android:textSize="@dimen/textSize16"
                                 android:textStyle="bold" />
 
-                            <com.essensys.JB089.CustomView.CustomButton
+                            <com.vayortricks.vtproductscanner.CustomView.CustomButton
                                 android:id="@+id/btn_flipcart"
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
@@ -188,7 +188,7 @@
                                 android:background="@drawable/drawable_btns_reg"
                                 android:fontFamily="sans-serif"
                                 android:padding="5dp"
-                                android:text="Buy from Flipcart"
+                                android:text="Buy from Flipkart"
                                 android:textAllCaps="false"
                                 android:textColor="@color/white"
                                 android:textSize="@dimen/textSize16"

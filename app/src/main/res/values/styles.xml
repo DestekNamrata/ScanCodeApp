@@ -100,4 +100,9 @@
         <item name="colorControlActivated">@color/btn_login</item>
         <item name="colorControlHighlight">@color/btn_login</item>
     </style>
+
+    <style name="AppTheme.NoActionBar.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
 </resources>
